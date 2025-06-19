@@ -264,3 +264,6 @@ For support, please:
 
 **Advanced Aerodynamic Simulation System v1.0**  
 *Professional-grade aerodynamic analysis with beautiful visualization*
+
+![image](https://github.com/user-attachments/assets/2caf312f-de78-4e48-a13b-72a66335e552)
+
