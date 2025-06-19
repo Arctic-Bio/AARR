@@ -1,0 +1,67 @@
+# Simple Aircraft Model for Testing
+# Created for Aerodynamic Simulation System
+
+# Vertices (fuselage)
+v 0.0 0.0 5.0    # nose
+v 0.0 0.5 3.0    # top front
+v 0.0 -0.5 3.0   # bottom front
+v 0.5 0.0 3.0    # right front
+v -0.5 0.0 3.0   # left front
+
+v 0.0 0.8 0.0    # top middle
+v 0.0 -0.8 0.0   # bottom middle
+v 0.8 0.0 0.0    # right middle
+v -0.8 0.0 0.0   # left middle
+
+v 0.0 0.5 -3.0   # top rear
+v 0.0 -0.5 -3.0  # bottom rear
+v 0.5 0.0 -3.0   # right rear
+v -0.5 0.0 -3.0  # left rear
+v 0.0 0.0 -5.0   # tail
+
+# Wing vertices
+v 3.0 0.0 1.0    # right wing tip front
+v 3.0 0.0 -1.0   # right wing tip rear
+v -3.0 0.0 1.0   # left wing tip front
+v -3.0 0.0 -1.0  # left wing tip rear
+
+# Faces (fuselage)
+f 1 2 3
+f 1 3 4
+f 1 4 2
+f 1 2 5
+f 1 5 3
+f 1 3 4
+f 1 4 5
+
+f 2 6 7
+f 2 7 3
+f 3 7 8
+f 3 8 4
+f 4 8 6
+f 4 6 2
+f 5 6 7
+f 5 7 8
+
+f 6 10 11
+f 6 11 7
+f 7 11 12
+f 7 12 8
+f 8 12 10
+f 8 10 6
+
+f 10 14 11
+f 11 14 12
+f 12 14 10
+
+# Wing faces
+f 8 15 16
+f 8 16 12
+f 6 17 18
+f 6 18 10
+
+# Connect wings to fuselage
+f 8 15 6
+f 6 15 17
+f 12 16 10
+f 10 16 18
